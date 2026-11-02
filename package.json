@@ -1,0 +1,16 @@
+{
+  "name": "three-wire-thread-measure",
+  "version": "1.0.0",
+  "description": "Three-wire thread pitch-diameter measurement calculator",
+  "license": "MIT",
+  "author": "shanguoao2026-web",
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "bin": { "three-wire-thread-measure": "dist/cli.js" },
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc && node -e \"require('node:fs').chmodSync('dist/cli.js', 0o755)\"",
+    "test": "npm run build && node --test"
+  },
+  "devDependencies": { "@types/node": "^18.19.0", "typescript": "^5.0.0" }
+}
